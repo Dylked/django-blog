@@ -137,6 +137,6 @@ LOGIN_URL = 'login'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = [
-    MEDIA_ROOT
-]
+from django.conf import settings
+from django.conf.urls.static import static
+
